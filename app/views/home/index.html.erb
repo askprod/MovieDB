@@ -1,0 +1,13 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%= form_for '/home/index' do |f| %>
+<%= f.text_field 'movie' %>
+<%= f.submit 'Search' %>
+<% end %>
+
+<% if @final_result.empty? %>
+<h1>Pas de résultat.</h1>
+<% else %>
+<h1>Résultat</h1>
+<% end %>
