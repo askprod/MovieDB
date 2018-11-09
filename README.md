@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Didn't push on Heroku, and didn't do ny front this time...
+# No need to rails `db:migrate` and toher DB related stuff, it's not being used.
+# Just `bundle install`, `rails db:create`, `rails server` and enjoy on your `http://localhost:3000/`
