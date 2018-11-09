@@ -1,0 +1,18 @@
+
+<table>
+  <tbody>
+    <% if @titles.empty? %>
+      <h1> No results.</h1>
+    <% else %>
+            <% i = 0 %>
+            <% @titles.each do |title|%>
+          <tr>
+            <td><img src="<%= @images[i]%>"></td>
+            <td> <%= title %> </td>
+            <td>Sorti le <%= @releases[i]%></td>
+            <% i += 1 %>
+          </tr>
+          <% end %>
+    <% end %>
+  </tbody>
+</table>

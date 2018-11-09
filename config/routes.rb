@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+
   root 'home#index'
-  get 'home/index'
-  post '/home/index', to: 'home#index'
-  # get '/home/result', to: 'home#result'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'movie', to: 'movie#search', as: 'movie'
+  post '/', to: 'movie#search'
+  
 end

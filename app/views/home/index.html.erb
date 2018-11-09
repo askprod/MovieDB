@@ -1,13 +1,10 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Welcome to the Movie Roulette</h1>
 
-<%= form_for '/home/index' do |f| %>
-<%= f.text_field 'movie' %>
-<%= f.submit 'Search' %>
+<%= form_tag(root_path, {class: 'form-group'}) do %>
+  <%= label_tag "Choose a Movie", nil, class: 'label' %>
+  <br>
+  <%= text_field_tag 'movie', nil, class: 'form-control', id: 'movie' %>
+  <br>
+  <%= submit_tag "Search" %>
 <% end %>
 
-<% if @final_result.empty? %>
-<h1>Pas de résultat.</h1>
-<% else %>
-<h1>Résultat</h1>
-<% end %>
