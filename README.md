@@ -1,3 +1,3 @@
 # Didn't push on Heroku, and didn't do ny front this time...
-# No need to rails `db:migrate` and toher DB related stuff, it's not being used.
+# No need to rails `db:migrate` and other DB related stuff, it's not being used.
 # Just `bundle install`, `rails db:create`, `rails server` and enjoy on your `http://localhost:3000/`
